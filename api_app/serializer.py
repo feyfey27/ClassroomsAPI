@@ -6,7 +6,7 @@ from classes.models import Classroom
 class ClassroomSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Classroom
-		fields = ['subject', 'year', 'teacher']
+		fields = ['subject', 'year', 'teacher', 'id']
 
 class ClassroomDetailSerializer(serializers.ModelSerializer):
 	class Meta:
@@ -16,7 +16,7 @@ class ClassroomDetailSerializer(serializers.ModelSerializer):
 class ClassroomUpdateSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Classroom
-		fields = ['year', 'teacher']
+		fields = ['year', 'teacher', 'subject']
 
 class ClassroomCreateSerializer(serializers.ModelSerializer):
 	class Meta:
